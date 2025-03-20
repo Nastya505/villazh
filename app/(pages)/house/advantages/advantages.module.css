@@ -1,0 +1,116 @@
+.advantages {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid var(--secondary-accent);
+    gap: 1px;
+    background-color: var(--secondary-accent);
+    overflow: hidden;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.25;
+    background-color: #fff;
+    fill: var(--secondary-accent);
+    color: var(--secondary-accent);
+}
+
+.iconWrapper {
+    gap: .5rem;
+    height: 60px;
+}
+
+.iconWrapper>svg {
+    height: 100%;
+    max-width: 130px;
+}
+
+.swiperWrapper {
+    margin-top: 3rem;
+}
+
+.additionalInfoWrapper {
+    cursor: pointer;
+    padding: .75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.titleModal {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.additionalInfo {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--secondary-accent);
+    border-radius: 50%;
+}
+
+.content {
+    line-height: 1;
+    margin-top: 1rem;
+}
+
+.additionalInfoIcon {
+    width: 100%;
+    height: 100%;
+    fill: var(--secondary-accent);
+}
+
+@media (max-width: 768px) {
+    .advantages {
+        grid-template-columns: 1fr 1fr;
+        margin-inline: auto;
+        max-width: 70%;
+        margin-top: 2rem;
+    }
+
+    .item {
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    .iconWrapper {
+        height: 60px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .advantages {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .advantages {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .iconWrapper>svg {
+        height: 100%;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 14px;
+    }
+}

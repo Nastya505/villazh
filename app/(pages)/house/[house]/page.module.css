@@ -1,0 +1,47 @@
+.house {
+    padding-top: 4.5rem;
+}
+
+.info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.price {
+    min-width: 200px;
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-block: 1px solid var(--secondary-accent);
+    color: var(--secondary-accent);
+    padding: 1rem;
+}
+
+.priceValue {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.priceCurrency {
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .price {
+        margin-top: 1.75rem;
+        min-width: 100%;
+    }
+
+    .house {
+        padding-top: 3.5rem;
+    }
+}

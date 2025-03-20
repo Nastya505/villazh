@@ -1,0 +1,94 @@
+.billetContainer {
+  width: fit-content;
+  border-radius: 30px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.1);
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  padding: 1.25em 4em;
+  font-size: 1.5rem;
+  color: var(--secondary-accent);
+}
+
+.billetContainer p span {
+  font-weight: bold;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mask {
+  overflow: hidden;
+  width: 100%;
+  height: 95vh;
+  -webkit-mask: url("/sprites/mask/main.svg") center center / cover repeat;
+  mask: url("/sprites/mask/main.svg") center center / cover repeat;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logoContainer {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.logoWrapper {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  fill: #fff;
+  color: #fff;
+}
+
+.logo {
+  width: 100%;
+}
+
+.title {
+  font-size: clamp(40px, 30vw, 280px);
+  line-height: 100%;
+}
+.description {
+  font-size: clamp(20px, 10vw, 40px);
+  line-height: 100%;
+}
+
+.legacy {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .legacy {
+    margin-bottom: inherit;
+  }
+  .billetContainer {
+    font-size: 1rem;
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 475px) {
+  .billetContainer {
+    margin-inline: 1rem;
+  }
+}

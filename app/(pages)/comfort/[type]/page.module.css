@@ -1,0 +1,24 @@
+.info {
+    padding-top: 5rem;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.imageWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    aspect-ratio: 16/9;
+}
+
+@media (max-width: 1024px) {
+    .info {
+        padding-top: 3rem;
+    }
+}
